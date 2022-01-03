@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Nav from './components/NavBar'
 import CartItem from './components/CartItem';
@@ -6,7 +6,7 @@ import CartPopUp from './components/CartPopUp';
 import React,{useState} from 'react';
 import {CartProvider} from "react-use-cart";
 function App() {
-  const [popUp, setPopUp] = useState(false)
+  
   return (
     <div className="App">
      <CartProvider>
