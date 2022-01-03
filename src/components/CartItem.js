@@ -1,8 +1,9 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom'
 import { useCart } from 'react-use-cart'
 import data from './data'
 export default function CartItem() {
-
+  
     const {addItem}=useCart()
     //const data= data
     return (
