@@ -31,6 +31,7 @@ export default function CartPopUp(props) {
          </div>
           
     
+          <div className='cart-products'>
           <table  className="table table-light table-hover " style={{boxShadow:'5px 5px 5px lightGray'}}>
           <tbody>
               <tr>
@@ -54,10 +55,10 @@ export default function CartPopUp(props) {
            
                  <tr key={item.id}>
                 <td>
-                    <img style={{width:'100px',height:'100px'}} src={item.imageUrl}/>
+                    <img style={{width:'100px',height:'100px'}} src={item.image}/>
                 </td>
                 <td >
-                    {item.name}
+                    {item.title}
                 </td>
                 <td>
                     {item.price*item.quantity}
@@ -86,6 +87,7 @@ export default function CartPopUp(props) {
             ))}
             </tbody>
           </table>
+          </div>
           <div className='col-auto ms-auto'>
               <h4>Total Price $ {cartTotal}</h4>
               <button className='btn btn-lg btn-danger' onClick={emptyCart}>Clear Cart</button>

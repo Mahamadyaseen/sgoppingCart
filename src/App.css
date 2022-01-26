@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.cart-products{
+  overflow-y: scroll;
+  height: 500px;
+}
